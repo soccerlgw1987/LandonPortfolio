@@ -1,0 +1,729 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Description meta -->
+    <meta name="description" content="...">
+    <!-- Author meta -->
+    <meta name="author" content="Bootstrap Temple">
+
+    <!-- Page Title -->
+    <title>Landon Wyant - Software Developer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom font icons -->
+    <link rel="stylesheet" href="https://file.myfontastic.com/6AeAYiqp5KBjSiZ2tE8WJW/icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slider -->
+    <link href="~/Content/slider.min.css" rel="stylesheet" />
+    <!-- Lightbox Pop up -->
+    <link href="~/Content/lightbox.min.css" rel="stylesheet" />
+    <!-- Datepicker -->
+    <link href="~/Content/datepicker.min.css" rel="stylesheet" />
+    <!-- Timepicker -->
+    <link href="~/Content/timepicki.min.css" rel="stylesheet" />
+    <!-- Owl Carousel -->
+    <link href="~/Content/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Content/style.default.css" rel="stylesheet" />
+    <!-- Modernizr -->
+    <script src="~/Scripts/modernizr.custom.79639.min.js"></script>
+
+    @*Here is the required CSS reference for using Syntax Highlighter*@
+    <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
+
+    <link href="~/Content/styleFolioCustom.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="page-holder">
+        <!-- Navbar -->
+        <header class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="~/img/HeadPic.jpg" data-lightbox="1" data-title="Landon Wyant - Software Developer">
+                            <img src="~/img/HeadPic-small.jpg">
+                        </a>
+                        <div class="navbar-buttons">
+                            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
+                        </div>
+                    </div>
+                    <div id="navigation" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Navbar -->
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div id="slider" class="sl-slider-wrapper">
+
+                <div class="sl-slider">
+                    <!-- slide -->
+                    <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                        <div class="sl-slide-inner" style="background-image: url(../../img/Header1.jpg);">
+                            <div class="container">
+                                <h2>My name is</h2>
+                                <h1>Landon Wyant</h1>
+                                <p>Seeking new software development opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide -->
+                    <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                        <div class="sl-slide-inner" style="background-image: url(../../img/Header2.jpg);">
+                            <div class="container">
+                                <h2>Ready to learn,</h2>
+                                <p>Experienced enough to begin!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide -->
+                    <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                        <div class="sl-slide-inner" style="background-image: url(../../img/Header3.png);">
+                            <div class="container">
+                                <p>Looking forward to finishing projects to further your companys goals!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End sl-slider -->
+                <!-- slider pagination -->
+                <nav id="nav-dots" class="nav-dots">
+                    <span class="nav-dot-current"></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+
+                <!-- scroll down btn -->
+                <a id="scroll-down" href="#about" class="hidden-xs"></a>
+
+                <!-- social icons menu -->
+                <div class="social">
+                    <div class="wrapper">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.linkedin.com/in/landon-wyant-40531089/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/soccerlgw1987" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                        <span>Follow me on</span>
+                    </div>
+                </div>
+            </div><!-- End slider-wrapper -->
+        </section>
+        <!-- End Hero Section -->
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container text-center">
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                <p class="lead">While in High School, I took Java courses at a local community college. This lead to me attending UNCG for additional courses focusing on C++ this time. Once I took the Associate BI Developer position at Hafele, I transferred to Qlikview. I am currently enrolled in a 12 week coding course to grow in the development field. Upon completion, I will be seeking a new opportunity to grow and expand my knowledge.</p>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myResume">
+                    Resume
+                </button>
+                @*Resume Modal*@
+                <div class="modal fade" id="myResume" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- JS Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" onclick="cleardata()">
+                                    &times;
+                                </button>
+                            </div>
+                            <!--Modal Body-->
+                            <div class="modal-body">
+                                <img src="http://localhost:54449/img/LWResume.PNG" />/"
+                            </div>
+                            @*Modal Footer*@
+                            <div class="modal-footer">
+                                <div class="row">
+                                    <div class="col-md-6" style="text-align:center">
+                                        
+                                    </div>
+                                    <div class="col-md-6" style="text-align:center">
+                                        <button type="button" class="btn btn-default" onclick="cleardata()" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+        <!-- Projects Section -->
+        <section id="projects" class="gallery">
+            <div class="container text-center">
+                <header>
+                    <h2>My Projects</h2>
+                    <h3>Completed Projects so far</h3>
+                </header>
+                <div class="gellery" style="font-size:xx-large">
+                    <div class="row">
+                        <!-- Item JS-->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/JSPic.png" alt="image">
+                                <a data-toggle="modal" data-target="#JSModal">
+                                    @*<span class="icon-search"></span>*@
+                                    <b style="color:white">JS Exercises</b>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item Qlikview-->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/Qlik.jpg" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Qlikview - Section coming soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item Blog-->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/Blog.jpg" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Blog - Section coming soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item Hobbies -->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/Warhammer.jpg" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title=" Hobbies - Section coming soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/BugTracker.jpg" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Bug Tracker - Section Coming Soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/MVC-Model.jpg" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="MVC - Section Coming Soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/WebAPI.png" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Web API - Section Coming Soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                            <div class="item">
+                                <img src="~/img/Xamarin.png" alt="image">
+                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Xamarin - Section Coming Soon" class="has-border">
+                                    <span class="icon-search"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="JSModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- JS Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" onclick="cleardata()">
+                            &times;
+                        </button>
+                        <h2 class="modal-title">Please enjoy my JS/Query exercises</h2>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Modal Tabs-->
+                        <ul class="nav nav-tabs" id="modalNav">
+                            <li class="active"><a id="mathTab" data-toggle="tab" href="#simplemath">Math</a></li>
+                            <li><a data-toggle="tab" href="#factCalc">Factorial</a></li>
+                            <li><a data-toggle="tab" href="#fizz">Fizz-Buzz</a></li>
+                            <li><a data-toggle="tab" href="#palindrome">Palindrome</a></li>
+                        </ul>
+                        <!--Tabs-->
+                        <div class="tab-content">
+                            <!--Math Section-->
+                            <div id="simplemath" class="tab-pane fade in active custom-pad">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>Math Calculations</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="text-align:center">
+                                        <div class="col-md-5"><h4>Enter 5 whole numbers (1-1,000)</h4><br /></div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-5">
+                                            <h4><span id="resultHdr">Results:</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            Number 1: <input id="num1" /><br>
+                                            Number 2: <input id="num2" /><br>
+                                            Number 3: <input id="num3" /><br>
+                                            Number 4: <input id="num4" /><br>
+                                            Number 5: <input id="num5" /><br>
+                                        </div>
+                                        <div class="col-md-2" style="text-align:center">
+                                            <div class="row">
+                                                <button id="btnNumber" class="btn btn-lg btn-primary">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                            <div class="row custom-pad">
+                                                <button id="btnNumber2" class="btn btn-md btn-danger">
+                                                    Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <span id="sum"></span><br />
+                                            <span id="product"></span><br />
+                                            <span id="avg"></span><br />
+                                            <span id="max"></span><br />
+                                            <span id="min"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Math Section-->
+                            <!--Factorial-->
+                            <div id="factCalc" class="tab-pane fade custom-pad">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>Factorial Calculation</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h4>Enter 1 whole number (1-100)</h4><br />
+                                        </div>
+                                        <div class="col-md-2">
+
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h4><span id="resultHdrFact">Result: </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            Enter number: <input type="text" id="factNumber" /><br />
+                                        </div>
+                                        <div class="col-md-2" style="text-align:center">
+                                            <div class="row">
+                                                <button id="factSubmit" class="btn btn-lg btn-primary">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                            <div class="row custom-pad">
+                                                <button id="factRes" class="btn btn-md btn-danger">
+                                                    Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <span id="factResult"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Factorial-->
+                            <!--Fizz-->
+                            <div id="fizz" class="tab-pane fade custom-pad">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>Fizz-Buzz Calculation</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h4>Enter 2 whole numbers (1-100)</h4><br />
+                                        </div>
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h4><span id="resultHdrFizz">Results: </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-5">
+                                            Number 1: <input type="text" id="FBFirstNum" /><br />
+                                            Number 2: <input type="text" id="FBSecondNum" />
+                                        </div>
+                                        <div class="col-md-2" style="text-align:center">
+                                            <div class="row">
+                                                <button id="fizzSubmit" class="btn btn-lg btn-primary">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                            <div class="row custom-pad">
+                                                <button id="fizzRes" class="btn btn-md btn-danger">
+                                                    Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5" id="FBResult1" style="word-wrap:break-word">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Fizz-->
+                            <!--Palindrome-->
+                            <div id="palindrome" class="tab-pane fade custom-pad">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>Palindrome Calculation</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            Enter a word(s) to be reversed:<b></b><br />
+                                        </div>
+                                        <div class="col-md-2">
+
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h4><span id="resultHdrPal">Results: </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-5">
+                                            <input type="text" id="palWord" /><br />
+                                        </div>
+                                        <div class="col-md-2" style="text-align:center">
+                                            <div class="row">
+                                                <button id="palSubmit" class="btn btn-lg btn-primary">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                            <div class="row custom-pad">
+                                                <button id="palRes" class="btn btn-md btn-danger">
+                                                    Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <span id="palResult1"></span><br />
+                                            <span id="palResult2"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Palindrome-->
+                        </div>
+                        <!--End Tabs-->
+                    </div>
+                    @*Modal Footer*@
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align:center">
+                                <button type="button" class="btn btn-success" id="toggleCode" onclick="toggleCode()">SHOW CODE</button>
+                            </div>
+                            <div class="col-md-6" style="text-align:center">
+                                <button type="button" class="btn btn-default" onclick="clearModalData()" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        @*Math Code*@
+                        <div id="mathCode" class="row" style="text-align:left">
+                            <pre class="brush:js">
+                                $("#btnNumber").click(function () {
+                                    $("#resultHdr").show();
+                                    //How do I use JQuery to get the value inside the input with id-num1?
+                                    var num1 = Number($("#num1").val());
+                                    var num2 = Number($("#num2").val());
+                                    var num3 = Number($("#num3").val());
+                                    var num4 = Number($("#num4").val());
+                                    var num5 = Number($("#num5").val());
+
+                                    if (num1 > 1000 || num1 < 1 || isNaN(num1) || num1 % 1 != 0 || num2 > 1000 || num2 < 1 || isNaN(num2) || num2 % 1 != 0 || num3 > 1000 || num3 < 1 || isNaN(num3) || num3 % 1 != 0 || num4 > 1000 || num4 < 1 || isNaN(num4) || num4 % 1 != 0 || num5 > 1000 || num5 < 1 || isNaN(num5) || num5 % 1 != 0) {
+                                        $("#num1").val("Please Correct Number");
+                                        $("#num2").val("Please Correct Number");
+                                        $("#num3").val("Please Correct Number");
+                                        $("#num4").val("Please Correct Number");
+                                        $("#num5").val("Please Correct Number");
+                                        $("#sum").html("Please correct input and try again.");
+                                        $("#product").html("Please correct input and try again.");
+                                        $("#avg").html("Please correct input and try again.");
+                                        $("#max").html("Please correct input and try again.");
+                                        $("#min").html("Please correct input and try again.");
+                                    } else {
+                                        //Calculate the Sum
+                                        var sum = num1 + num2 + num3 + num4 + num5;
+                                        //Calculate the Product
+                                        var product = num1 * num2 * num3 * num4 * num5;
+                                        //Calculate the Average
+                                        var avg = sum / 5;
+                                        //Calculate the Largest
+                                        var max = Math.max(num1, num2, num3, num4, num5);
+                                        //Calculate the Smallest
+                                        var min = Math.min(num1, num2, num3, num4, num5);
+
+                                        $("#sum").html("The sum of your numbers is: " + sum);
+                                        $("#product").html("The product of your numbers is: " + product);
+                                        $("#avg").html("The average of your numbers is: " + avg);
+                                        $("#max").html("The max of your numbers is: " + max);
+                                        $("#min").html("The min of your numbers is: " + min);
+                                    }
+                                });
+
+                                $("#btnNumber2").click(function () {
+                                    $("#resultHdr").hide();
+                                    /* Single line Reset function executes on click of Reset Button */
+                                    $("#num1, #num2, #num3, #num4, #num5").val("");
+                                    $("#sum, #product, #avg, #max, #min").html("");
+                                });
+                            </pre>
+                        </div>
+                        @*Factorial Code*@
+                        <div id="factorialCode" class="row" style="text-align:left">
+                            <pre class="brush:js">
+                                $("#resultHdrFact").hide();
+                                $("#factSubmit").click(function () {
+                                    $("#resultHdrFact").show();
+                                    var x = $("#factNumber").val();
+                                    var y = 100;
+                                    if (x < 1 || x > y || isNaN(x) || x % 1 != 0) {
+                                        $("#factNumber").val("Please Correct Number");
+                                        $("#factResult").html("Please correct input and try again.");
+                                    } else {
+                                        for (var i = x - 1; i > 1; i--) {
+                                            x = x * i;
+                                        }
+                                        $("#factResult").html(x);
+                                    }
+                                });
+
+                                $("#factRes").click(function () {
+                                    $("#resultHdrFact").hide();
+                                    $("#factNumber").val("");
+                                    $("#factResult").html("");
+                                });
+                            </pre>
+                        </div>
+                        @*Fizz Code*@
+                        <div id="fizzCode" class="row" style="text-align:left">
+                            <pre class="brush:js">
+                                $("#resultHdrFizz").hide();
+                                $("#fizzSubmit").click(function () {
+                                    $("#resultHdrFizz").show();
+                                    var num1 = $("#FBFirstNum").val();
+                                    var num2 = $("#FBSecondNum").val();
+                                    var y = 100;
+                                    var myArray = [];
+
+                                    if (num1 < 1 || num2 < 1 || num1 > y || num2 > y || isNaN(num1) || isNaN(num2) || num1 % 1 != 0 || num2 % 1 != 0) {
+                                        $("#FBFirstNum").val("Please Correct Number");
+                                        $("#FBSecondNum").val("Please Correct Number");
+                                        $("#FBResult1").html("Please correct input and try again.");
+                                    } else {
+                                        for (var i = 1; i <= 100; i++) {
+                                            if (i % num1 == 0 && i % num2 == 0) {
+                                                myArray.push("<span class='fizzBuzz'>Fizz-Buzz</span>");
+                                            }
+                                            else if (i % num1 == 0) {
+                                                myArray.push("<span class='fizz'>Fizz</span>");
+                                            }
+                                            else if (i % num2 == 0) {
+                                                myArray.push("<span class='buzz'>Buzz</span>");
+                                            }
+                                            else {
+                                                myArray.push(i);
+                                            }
+                                        }
+                                        $("#FBResult1").html(myArray.join(', '));
+                                    }
+                                });
+
+                                $("#fizzRes").click(function () {
+                                    $("#resultHdrFizz").hide();
+                                    $("#FBFirstNum").val("");
+                                    $("#FBSecondNum").val("");
+                                    $("#FBResult1").html("");
+                                });
+                            </pre>
+                        </div>
+                        @*Palindrome Code*@
+                        <div id="palinCode" class="row" style="text-align:left">
+                            <pre class="brush:js">
+                                $("#resultHdrPal").hide();
+                                $("#palSubmit").click(function () {
+                                    $("#resultHdrPal").show();
+                                    var userString = $("#palWord").val();
+                                    var userLowerString = $("#palWord").val();
+                                    if (userString == userString.split('').reverse().join('') || userLowerString.toLowerCase() == userLowerString.toLowerCase().split('').reverse().join('')) {
+                                        $("#palResult1").html(userString + " is a palindrome.");
+                                    }
+                                    else {
+                                        $("#palResult1").html(userString + " is not a palindrome.");
+                                    }
+                                });
+
+                                $("#palRes").click(function () {
+                                    $("#resultHdrPal").hide();
+                                    $("#palWord").val("");
+                                    $("#palResult1").html("");
+                                    $("#palResult2").html("");
+                                });
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Projects Section -->
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div id="map"></div>
+            <div class="container text-center">
+                <div class="form-holder">
+                    <header>
+                        <h2>Feel free to contact me</h2>
+                        <h3>Will respond within 24 hours</h3>
+                    </header>
+                    <form method="get" action="#" id="contact-form">
+                        <div class="row">
+                            <label for="user-name" class="col-sm-6 unique">
+                                Name
+                                <input type="text" name="username" id="user-name" required>
+                            </label>
+                            <label for="user-email" class="col-sm-6 unique">
+                                Email
+                                <input type="email" name="useremail" id="user-email" required>
+                            </label>
+                            <label for="message" class="col-sm-12 unique">
+                                Your Message
+                                <textarea name="message" id="message" required></textarea>
+                            </label>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn-unique" id="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+        <!-- Footer -->
+        <footer id="mainFooter" class="mainFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 brief">
+                        @*<div class="header">
+                            <img src="~/img/HeadPic.jpg" alt="italiano" width="100">
+                        </div>
+                        <p>Not sure here.</p>*@
+                    </div>
+                    <div class="col-md-4 contact">
+                        <div class="header">
+                            <h6>Contact</h6>
+                        </div>
+                        <ul class="contact list-unstyled">
+                            <li><a href="https://www.google.com/maps/dir//Archdale,+NC/" target="_blank"><span class="icon-map text-primary"></span>Archdale, NC</a></li>
+                            <li><a href="mailto:soccerlgw1987@yahoo.com"><span class="icon-mail text-primary"></span>soccerlgw1987@yahoo.com</a></li>
+                            <li><span class="icon-phone text-primary"></span>336-708-2802</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 newsletter">
+                    </div>
+                </div>
+                <ul class="social list-unstyled list-inline">
+                    <li><a href="https://www.linkedin.com/in/landon-wyant-40531089/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/soccerlgw1987" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyrights">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <ul class="list-unstyled list-inline">
+                                <li><a href="#">Policy Privacy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-7">
+                            <p>&copy; 2017 Italiano Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a> Custimized by Landon Wyant</p>
+                            <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- ScrollTop btn -->
+        <div id="scrollTop" class="btn-unique">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End ScrollTop btn -->
+    </div>
+
+    <!-- jQuery library -->
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.ba-cond.min.js"></script>
+    <script src="~/Scripts/jquery.slitslider.min.js"></script>
+    <script src="~/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Scripts/lightbox.min.js"></script>
+    <script src="~/Scripts/datepicker.min.js"></script>
+    <script src="~/Scripts/datepicker.en.min.js"></script>
+    <script src="~/Scripts/timepicki.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script>
+    <script src="~/Scripts/map.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <script src="~/Scripts/JSExercises.js"></script>
+
+    @*Here is the required JS reference for using Syntax Highlighter*@
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script>SyntaxHighlighter.all();</script>
+
+    @*Pre Coding Hide*@
+    <script>
+        $("#mathCode").hide();
+        $("#factorialCode").hide();
+        $("#fizzCode").hide();
+        $("#palinCode").hide();
+    </script>
+
+</body>
+</html>
