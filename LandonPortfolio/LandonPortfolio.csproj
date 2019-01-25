@@ -125,11 +125,13 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,16 +164,25 @@
     <Content Include="img\HeadPic.jpg" />
     <Content Include="img\JSPic.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\LoL.jpg" />
     <Content Include="img\LWResume.PNG" />
     <Content Include="img\MVC-Model.jpg" />
     <Content Include="img\next.svg" />
     <Content Include="img\prev.svg" />
     <Content Include="img\Qlik.jpg" />
+    <Content Include="img\Qlikview1.jpg" />
+    <Content Include="img\Qlikview2.jpg" />
+    <Content Include="img\Qlikview3.jpg" />
     <Content Include="img\Warhammer.jpg" />
+    <Content Include="img\Warhammer1.jpg" />
+    <Content Include="img\Warhammer2.jpg" />
     <Content Include="img\WebAPI.png" />
     <Content Include="img\Xamarin.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Private.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\LWPortfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datepicker.en.min.js" />
@@ -242,7 +253,9 @@
     <Content Include="Scripts\SyntaxHighlighter\styles\shThemeMidnight.css" />
     <Content Include="Scripts\SyntaxHighlighter\styles\shThemeRDark.css" />
     <Content Include="Scripts\timepicki.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -259,7 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

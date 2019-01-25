@@ -1,6 +1,8 @@
 ﻿@{ 
     Layout = null;
 }
+@model LandonPortfolio.Models.EmailModel
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,7 +159,7 @@
                             <div class="modal-footer">
                                 <div class="row">
                                     <div class="col-md-6" style="text-align:center">
-                                        
+
                                     </div>
                                     <div class="col-md-6" style="text-align:center">
                                         <button type="button" class="btn btn-default" onclick="cleardata()" data-dismiss="modal">Close</button>
@@ -184,7 +186,6 @@
                             <div class="item">
                                 <img src="~/img/JSPic.png" alt="image">
                                 <a data-toggle="modal" data-target="#JSModal">
-                                    @*<span class="icon-search"></span>*@
                                     <b style="color:white">JS Exercises</b>
                                 </a>
                             </div>
@@ -193,8 +194,8 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                             <div class="item">
                                 <img src="~/img/Qlik.jpg" alt="image">
-                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Qlikview - Section coming soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                <a data-toggle="modal" data-target="#QlikCar">
+                                    <b style="color:white">Qlikview</b>
                                 </a>
                             </div>
                         </div>
@@ -202,8 +203,8 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                             <div class="item">
                                 <img src="~/img/Blog.jpg" alt="image">
-                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Blog - Section coming soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                <a href="https://lwblog.azurewebsites.net/Home/Index" target="_blank">
+                                    <b style="color:white">Blog</b>
                                 </a>
                             </div>
                         </div>
@@ -211,8 +212,8 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                             <div class="item">
                                 <img src="~/img/Warhammer.jpg" alt="image">
-                                <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title=" Hobbies - Section coming soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                <a data-toggle="modal" data-target="#HobCar">
+                                    <b style="color:white">Hobbies</b>
                                 </a>
                             </div>
                         </div>
@@ -221,7 +222,7 @@
                             <div class="item">
                                 <img src="~/img/BugTracker.jpg" alt="image">
                                 <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Bug Tracker - Section Coming Soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                    <b style="color:white">Bug Tracker</b>
                                 </a>
                             </div>
                         </div>
@@ -230,7 +231,7 @@
                             <div class="item">
                                 <img src="~/img/MVC-Model.jpg" alt="image">
                                 <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="MVC - Section Coming Soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                    <b style="color:white">MVC</b>
                                 </a>
                             </div>
                         </div>
@@ -239,7 +240,7 @@
                             <div class="item">
                                 <img src="~/img/WebAPI.png" alt="image">
                                 <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Web API - Section Coming Soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                    <b style="color:white">Web API</b>
                                 </a>
                             </div>
                         </div>
@@ -248,7 +249,7 @@
                             <div class="item">
                                 <img src="~/img/Xamarin.png" alt="image">
                                 <a href="~/img/ComingSoon.jpg" data-lightbox="image-1" data-title="Xamarin - Section Coming Soon" class="has-border">
-                                    <span class="icon-search"></span>
+                                    <b style="color:white">Xamarin</b>
                                 </a>
                             </div>
                         </div>
@@ -256,6 +257,7 @@
                 </div>
             </div>
         </section>
+        <!--JS Exercises-->
         <div class="modal fade" id="JSModal" role="dialog">
             <div class="modal-dialog modal-lg">
                 <!-- JS Modal content-->
@@ -283,6 +285,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h2>Math Calculations</h2>
+                                            A simple mathematical operation to determine sum, product, average, min, and max numbers based on the input you provide.
                                         </div>
                                     </div>
                                     <div class="row" style="text-align:center">
@@ -329,6 +332,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h2>Factorial Calculation</h2>
+                                            A factorial is the product of an integer and all the integers below it.
                                         </div>
                                     </div>
                                     <div class="row">
@@ -371,6 +375,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h2>Fizz-Buzz Calculation</h2>
+                                            This Fizz-Buzz calculation determines whether the 2 numbers provided can be divided evenly into numbers 1-100. Fizz represents the first number, Buzz the second, and Fizz-Buzz if both numbers go into something evenly.
                                         </div>
                                     </div>
                                     <div class="row">
@@ -412,11 +417,12 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h2>Palindrome Calculation</h2>
+                                            A palindrom is a word, phrase, or sequence that reads the same backward as it does forward.
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-5">
-                                            Enter a word(s) to be reversed:<b></b><br />
+                                            <h4>Enter a word(s) to be reversed:</h4>(not case-sensitive)<br /><br />
                                         </div>
                                         <div class="col-md-2">
 
@@ -609,6 +615,116 @@
                 </div>
             </div>
         </div>
+        <!--Qlik Carousel-->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="QlikCar" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">Qlikview Project Sample</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="~/img/Qlikview1.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            <a class="Qlikstyle" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Qlikview Supply Chain project to view and compare the Top Transactions of items and employees based on user selections">Hover for Additional Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="~/img/Qlikview2.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            <a class="Qlikstyle" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Qlikview tracking project to track completed order progress throughout the day and refresh every 15 minutes">Hover for Additional Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="~/img/Qlikview3.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            <a class="Qlikstyle" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Qlikview selections to narrow selected results to the desired output">Hover for Additional Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hobbies-->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="HobCar" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">Hobbies</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carousel-Hobby" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-Hobby" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-Hobby" data-slide-to="1"></li>
+                                    <li data-target="#carousel-Hobby" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="~/img/Warhammer1.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            <a class="Qlikstyle" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Warhammer 40k is a tapletop game that I enjoy playing. It is a great time to talk with friends and meet new people">Hover for Additional Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="~/img/Warhammer2.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            <a class="Qlikstyle" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a closeup of one of my MANY painted models">Hover for Additional Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="~/img/LoL.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            <a class="Qlikstyle" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="League of Legends is an online MOBA game and Esports competition that I both enjoy playing and watching">Hover for Additional Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-Hobby" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-Hobby" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End Projects Section -->
         <!-- Contact Section -->
         <section id="contact" class="contact">
@@ -619,8 +735,69 @@
                         <h2>Feel free to contact me</h2>
                         <h3>Will respond within 24 hours</h3>
                     </header>
-                    <form method="get" action="#" id="contact-form">
+                    @*<form method="get" action="#" id="contact-form">*@
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+                        <br />
                         <div class="row">
+                            <label for="user-name" class="col-sm-6 unique">
+                                Name
+                                @*<input type="text" name="username" id="user-name" required>*@
+                                @Html.TextBoxFor(m => m.FromName)
+                            </label>
+                            <label for="user-email" class="col-sm-6 unique">
+                                Email
+                                @*<input type="email" name="useremail" id="user-email" required>*@
+                                @Html.TextBoxFor(m => m.FromEmail)
+                            </label>
+                            <label for="message" class="col-sm-12 unique">
+                                Subject
+                                @Html.TextBoxFor(m => m.Subject)
+                            </label>
+                            <label for="message" class="col-sm-12 unique">
+                                Your Message
+                                @*<textarea name="message" id="message" required></textarea>*@
+                                @Html.TextAreaFor(m => m.Body)
+                            </label>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn-unique" id="btnContact">Send</button>
+                            </div>
+                        </div>
+
+
+                        @*<div class="form-group">
+                            <div class="col-md-4 fixIndent">
+                                @Html.TextBoxFor(m => m.FromName, new { @placeholder = "Name" })
+                            </div>
+
+                            <div class="col-md-4 fixIndent">
+                                @Html.TextBoxFor(m => m.FromEmail, new { @placeholder = "Email" })
+                            </div>
+
+                            <div class="col-md-4 fixIndent">
+                                @Html.TextBoxFor(m => m.Subject, new { @placeholder = "Subject" })
+                            </div>
+
+                            <div class="col-md-12 fixIndent">
+                                @Html.TextAreaFor(m => m.Body, new { @placeholder = "Message" })
+                                <br />
+                            </div>
+                        </div>
+                        <input type="submit" value="SEND" />*@
+                    }
+
+
+
+
+
+
+
+
+
+                        @*<div class="row">
                             <label for="user-name" class="col-sm-6 unique">
                                 Name
                                 <input type="text" name="username" id="user-name" required>
@@ -636,8 +813,8 @@
                             <div class="col-sm-12">
                                 <button type="submit" class="btn-unique" id="submit">Send</button>
                             </div>
-                        </div>
-                    </form>
+                        </div>*@
+                    @*</form>*@
                 </div>
             </div>
         </section>
@@ -647,10 +824,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 brief">
-                        @*<div class="header">
-                            <img src="~/img/HeadPic.jpg" alt="italiano" width="100">
-                        </div>
-                        <p>Not sure here.</p>*@
+                        
                     </div>
                     <div class="col-md-4 contact">
                         <div class="header">
@@ -681,7 +855,7 @@
                             </ul>
                         </div>
                         <div class="col-sm-7">
-                            <p>&copy; 2017 Italiano Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a> Custimized by Landon Wyant</p>
+                            <p>&copy; 2017 Italiano Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a> Customized by Landon Wyant</p>
                             <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
                         </div>
                     </div>
@@ -711,7 +885,6 @@
     <script src="~/Scripts/map.min.js"></script>
     <script src="~/Scripts/script.js"></script>
     <script src="~/Scripts/JSExercises.js"></script>
-
     @*Here is the required JS reference for using Syntax Highlighter*@
     <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
@@ -724,6 +897,14 @@
         $("#fizzCode").hide();
         $("#palinCode").hide();
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+
 
 </body>
 </html>

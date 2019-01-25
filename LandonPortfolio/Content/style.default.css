@@ -748,7 +748,6 @@ section.about::before {
   content: '';
   display: block;
   background-position: center center;
-  background: url(../img/dish-d.png) no-repeat;
   background-size: 100%;
   position: absolute;
   max-width: 300px;

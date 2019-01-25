@@ -14,7 +14,39 @@
     color: red;
 }
 
-/*Item Project Titles*/
-/*.itemPro {
-    color: white
-}*/
+/*Modal Position*/
+#JSModal {
+    padding-top: 80px;
+}
+
+/*Qlikview Words*/
+.Qlikstyle {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    background-color:forestgreen;
+}
+
+/*Qlikview Position*/
+#QlikCar {
+    padding-top: 40px;
+}
+
+/*Hover text*/
+.popover-content {
+    background-color: forestgreen;
+    color: white;
+    padding: 25px;
+    font-size: medium;
+}
+
+/*Carousel circles*/
+.carousel-indicators li {
+    background-color: forestgreen;
+    border-color:forestgreen;
+}
+
+/*Hobbies Position*/
+#HobCar {
+    padding-top: 40px;
+}

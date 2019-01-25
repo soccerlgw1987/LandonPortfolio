@@ -63,7 +63,7 @@ $("#factSubmit").click(function () {
         for (var i = x - 1; i > 1; i--) {
             x = x * i;
         }
-    $("#factResult").html(x);
+    $("#factResult").html("The factorial is " + x);
     }
 });
 
@@ -185,3 +185,4 @@ function toggleCode() {
         $("#palinCode").toggle();
     }
 }
+
