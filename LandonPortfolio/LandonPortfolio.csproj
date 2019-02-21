@@ -183,6 +183,7 @@
     <Content Include="Private.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="img\Landon Wyant Final Resume 2019.pdf" />
     <None Include="Properties\PublishProfiles\LWPortfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datepicker.en.min.js" />
