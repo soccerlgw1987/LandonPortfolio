@@ -116,13 +116,35 @@ $("#fizzRes").click(function () {
 $("#resultHdrPal").hide();
 $("#palSubmit").click(function () {
     $("#resultHdrPal").show();
-    var userString = $("#palWord").val();
-    var userLowerString = $("#palWord").val();
-    if (userString == userString.split('').reverse().join('') || userLowerString.toLowerCase() == userLowerString.toLowerCase().split('').reverse().join('')) {
-        $("#palResult1").html(userString + " is a palindrome.");
+    //var userString = $("#palWord").val();
+    //var userLowerString = $("#palWord").val();
+    //if (userString == userString.split('').reverse().join('') || userLowerString.toLowerCase() == userLowerString.toLowerCase().split('').reverse().join('')) {
+    //    $("#palResult1").html(userString + " is a palindrome.");
+    //}
+    //else {
+    //    $("#palResult1").html(userString + " is not a palindrome.");
+    //}
+    //var test = userLowerString.replace(/\s/g, '');
+    //for (var i = 0; i < test.length; i++) {
+    //    if (test.substring(i + 1, i) == test.substring(test.length-1-i, test.length-2-i))
+    //        return true
+    //    else
+    //        return false
+    //}
+    var word = $("#palWord").val();
+    var revWord = "";
+    var modWord = word.toLowerCase().replace(/\s/g, '');
+    //var arrayWord = modWord.split('').reverse().join('');
+
+    for (var wordLength = modWord.length; wordLength > 0; wordLength--) {
+        revWord += modWord.substring(wordLength, wordLength-1)
+    }
+
+    if (modWord == revWord /*modWord == arrayWord*/) {
+        $("#palResult1").html(word + " is a palindrome.");
     }
     else {
-        $("#palResult1").html(userString + " is not a palindrome.");
+        $("#palResult1").html(word + " is not a palindrome.");
     }
 });
 

@@ -563,13 +563,19 @@
                                 $("#resultHdrPal").hide();
                                 $("#palSubmit").click(function () {
                                     $("#resultHdrPal").show();
-                                    var userString = $("#palWord").val();
-                                    var userLowerString = $("#palWord").val();
-                                    if (userString == userString.split('').reverse().join('') || userLowerString.toLowerCase() == userLowerString.toLowerCase().split('').reverse().join('')) {
-                                        $("#palResult1").html(userString + " is a palindrome.");
+                                    var word = $("#palWord").val();
+                                    var revWord = "";
+                                    var modWord = word.toLowerCase().replace(/\s/g, '');
+
+                                    for (var wordLength = modWord.length; wordLength > 0; wordLength--) {
+                                        revWord += modWord.substring(wordLength, wordLength-1)
+                                    }
+
+                                    if (modWord == revWord) {
+                                        $("#palResult1").html(word + " is a palindrome.");
                                     }
                                     else {
-                                        $("#palResult1").html(userString + " is not a palindrome.");
+                                        $("#palResult1").html(word + " is not a palindrome.");
                                     }
                                 });
 
