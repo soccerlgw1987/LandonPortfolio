@@ -178,6 +178,11 @@
     <Content Include="img\Warhammer2.jpg" />
     <Content Include="img\WebAPI.png" />
     <Content Include="img\Xamarin.png" />
+    <Content Include="img\Xamarin1.jpg" />
+    <Content Include="img\Xamarin2.jpg" />
+    <Content Include="img\Xamarin3.jpg" />
+    <Content Include="img\Xamarin4.jpg" />
+    <Content Include="img\Xamarin5.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Private.config">
